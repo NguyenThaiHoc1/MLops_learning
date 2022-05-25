@@ -1,0 +1,6 @@
+Install mini-conda: https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html#install-macos-silent
+Miniconda3_space: source /Users/thaihoc/miniconda3/bin/activate
+-- Create env: conda create --name mleng python=3.8
+    -- access env: conda activate mleng
+    -- deactive: conda deactivate
+    -- create file yml: conda env export > environment.yml
