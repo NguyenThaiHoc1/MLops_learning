@@ -16,7 +16,7 @@ training = spark.createDataFrame([
 
 tokenizer = Tokenizer(inputCol="text", outputCol="words")
 hashingTF = HashingTF(inputCol=tokenizer.getOutputCol(), outputCol="features")
-lr = LogisticRegression(maxIter=10, regParam=0.001)
+lr = LogisticRegression(maxIter=model_config["maxIter"], regParam=model_config["regParam"])
 pipeline = Pipeline(stages=[tokenizer, hashingTF, lr])
 
 model = pipeline.fit(training)
