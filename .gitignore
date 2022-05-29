@@ -1,3 +1,10 @@
 .idea
 
 project_env
+
+
+mlflow_pratice/dataset
+mlflow_pratice/outputs
+mlflow_pratice/images
+mlflow_pratice/mlruns
+mlflow_pratice/data_processed
